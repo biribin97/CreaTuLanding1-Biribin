@@ -1,22 +1,16 @@
 import React from 'react'
-import "react";
-import "react-bootstrap/dist/react-bootstrap.min.js";
-import NavBar from './componentes/NavBar.jsx';
+import 'bootstrap/dist/css/bootstrap.min.css'; // Add this for Bootstrap styles
+import NavBar from './componentes/NavBar/NavBar.jsx';
+import ItemListContainer from './componentes/ItemListContainer/ItemListContainer.jsx';
 
 
 function App() {
   return (
     <div>
-      <nav>
-      <li>inicio</li>
-      <li>icqn</li>
-      <li>ewgv</li>
-      </nav>
-<h1>hola</h1>
+      <NavBar />
+      <ItemListContainer mensaje="Bienvenidos a la tienda online" />
     </div>
   )
 }
-
-
 
 export default App
